@@ -56,5 +56,69 @@ function toggleLang() {
     }
 }
 
+function setupScrollReveals() {
+    var shouldReduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var revealTargets = document.querySelectorAll(
+        '.hero-content, .origin-grid > *, .service-card, .founder-strip, .contact-container > *'
+    );
+    var serviceStaggerIndex = 0;
+
+    if (!revealTargets.length) return;
+
+    revealTargets.forEach(function (el) {
+        el.classList.add('reveal');
+        if (el.classList.contains('service-card')) {
+            el.style.setProperty('--reveal-delay', (serviceStaggerIndex * 85) + 'ms');
+            serviceStaggerIndex += 1;
+        }
+    });
+
+    if (shouldReduceMotion || !('IntersectionObserver' in window)) {
+        revealTargets.forEach(function (el) {
+            el.classList.add('is-visible');
+        });
+        return;
+    }
+
+    var observer = new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '0px 0px -60px 0px'
+    });
+
+    revealTargets.forEach(function (el) {
+        observer.observe(el);
+    });
+}
+
+function setupHeroEntrance() {
+    var shouldReduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var hero = document.querySelector('.hero');
+    if (!hero) return;
+
+    var sequence = hero.querySelectorAll('.section-tag, h1, p, .submit-btn');
+    sequence.forEach(function (el, index) {
+        el.style.setProperty('--reveal-delay', (index * 110) + 'ms');
+    });
+
+    if (shouldReduceMotion) {
+        hero.classList.add('hero-animate-in');
+        return;
+    }
+
+    requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+            hero.classList.add('hero-animate-in');
+        });
+    });
+}
+
 applyFormPlaceholders(false);
 setupMailtoContactForm();
+setupScrollReveals();
+setupHeroEntrance();

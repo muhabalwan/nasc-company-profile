@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-08T15:50:00.000Z",
+  "title": "Design System: NASC Website",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Field Navy",
+        "canonical": "#123356",
+        "tonalRamp": [
+          "#0a1a2b",
+          "#0d2338",
+          "#10304d",
+          "#123356",
+          "#2a4c71",
+          "#4a688d",
+          "#7f95b1",
+          "#c8d2df"
+        ]
+      },
+      "accent": {
+        "role": "tertiary",
+        "displayName": "Execution Gold",
+        "canonical": "#c0944b",
+        "tonalRamp": [
+          "#2f2412",
+          "#4a351a",
+          "#6f5027",
+          "#947038",
+          "#c0944b",
+          "#d2ac70",
+          "#e3c79e",
+          "#f3e6d1"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headlines and section-intro statements."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Long-form service, leadership, and contact copy."
+      }
+    },
+    "shadows": [
+      {
+        "name": "interactive-lift",
+        "value": "0 10px 30px rgba(0, 0, 0, 0.1)",
+        "purpose": "Service card hover and elevated interaction moments."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Primary entrance and reveal transitions."
+      },
+      {
+        "name": "ease-out-quart",
+        "value": "cubic-bezier(0.25, 1, 0.5, 1)",
+        "purpose": "Micro-interactions such as hover, focus, and button states."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "lg",
+        "value": "992px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary call-to-action with restrained premium motion.",
+      "html": "<button class=\"ds-btn-primary\">Explore Capabilities</button>",
+      "css": ".ds-btn-primary { background: #c0944b; color: #ffffff; border: 0; border-radius: 4px; padding: 15px 40px; font: 700 1rem/1.2 Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1), background-color 180ms cubic-bezier(0.25, 1, 0.5, 1); cursor: pointer; } .ds-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(192, 148, 75, 0.28); } .ds-btn-primary:focus-visible { outline: 2px solid #c0944b; outline-offset: 3px; }"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "card-service",
+      "description": "Flat-by-default service container with interaction lift.",
+      "html": "<article class=\"ds-card\"><h3>Pipeline Construction</h3><p>Main lines, flowlines, and field piping with supervised delivery.</p></article>",
+      "css": ".ds-card { background: #ffffff; color: #1a1a1b; border: 1px solid #eeeeee; border-radius: 4px; padding: 30px; transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 260ms cubic-bezier(0.16, 1, 0.3, 1), border-color 260ms cubic-bezier(0.25, 1, 0.5, 1); } .ds-card h3 { margin: 0 0 12px; color: #123356; font: 600 1.25rem/1.3 Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; } .ds-card p { margin: 0; line-height: 1.7; } .ds-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); border-color: #c0944b; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Operational Confidence, Human Voice",
+    "overview": "The visual system communicates execution discipline first, then warmth. This is a credibility-led bilingual brand surface, not a generic corporate brochure and not a startup-style promotional page.\n\nThe page should feel premium through restraint: strong typography, controlled spacing rhythm, and selective motion that confirms hierarchy and interaction. It should not rely on decorative effects to signal quality.",
+    "keyCharacteristics": [
+      "Clear bilingual hierarchy with equal intent in English and Arabic",
+      "Navy-gold trust palette with restrained contrast accents",
+      "Section rhythm that alternates dense proof blocks with breathing space",
+      "Purposeful interaction feedback and subtle motion"
+    ],
+    "rules": [
+      {
+        "name": "The Trust Accent Rule",
+        "body": "Accent gold is for emphasis and action cues, not large decorative surfaces.",
+        "section": "colors"
+      },
+      {
+        "name": "The Bilingual Parity Rule",
+        "body": "Arabic and English content must preserve equivalent visual weight and readability.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-by-Default Rule",
+        "body": "Surfaces remain calm until user interaction demands feedback.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve bilingual parity in spacing, hierarchy, and interaction behavior.",
+      "Do use accent gold for intentional emphasis and action states.",
+      "Do keep motion subtle and functional, especially around content reveals and feedback.",
+      "Do prioritize direct contact pathways in every major section."
+    ],
+    "donts": [
+      "Don't use a generic corporate template look with interchangeable section patterns.",
+      "Don't replace evidence-led copy with abstract marketing language.",
+      "Don't introduce decorative motion that competes with content comprehension.",
+      "Don't use side-stripe border accents as visual shortcuts."
+    ]
+  }
+}
