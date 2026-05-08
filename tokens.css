@@ -1,0 +1,19 @@
+:root {
+    /* Brand */
+    --primary: #123356;
+    --secondary: #1a2a3a;
+    --accent: #c0944b;
+
+    /* Text */
+    --text-light: #ccd6f6;
+    --text-dark: #1a1a1b;
+
+    /* Surfaces */
+    --white: #ffffff;
+    --gray: #f8f9fa;
+
+    /* Overlays */
+    --overlay-primary-98: rgba(18, 51, 86, 0.98);
+    --overlay-primary-82: rgba(18, 51, 86, 0.82);
+    --overlay-primary-80: rgba(18, 51, 86, 0.8);
+}

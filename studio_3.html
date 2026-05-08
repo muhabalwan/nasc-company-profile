@@ -4,372 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASC for Power Solutions | Excellence Through Experience</title>
+    <title>NASC for Power Solutions | Oil & Gas Field Execution in Syria</title>
+    <meta name="description"
+        content="NASC supports operators and procurement teams with disciplined oil and gas field execution in Syria: pipelines, surface facilities, sludge treatment, water injection, and HSEQ-led delivery.">
+    <meta name="keywords"
+        content="oil and gas field services Syria, pipeline construction Syria, surface facilities Syria, water injection services, sludge treatment oilfield, HSEQ oil and gas, oil and gas contractor Syria">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#123356">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="NASC for Power Solutions">
+    <meta property="og:title" content="NASC for Power Solutions | Operator-Focused Field Services">
+    <meta property="og:description"
+        content="Operator-focused field execution in Syria for pipelines, surface facilities, water injection, and sludge treatment with disciplined HSEQ performance.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NASC | Oil & Gas Field Execution in Syria">
+    <meta name="twitter:description"
+        content="Disciplined oil and gas field execution for operators in Syria: pipelines, facilities, water injection, sludge treatment, and HSEQ-led delivery.">
+    <meta name="twitter:image" content="logo.png">
+
     <link rel="icon" href="logo.png" type="image/png">
+    <link rel="preload" as="image" href="bg_main.jpeg" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <!-- Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap"
         rel="stylesheet">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <style>
-        :root {
-            /* Adjusted to match the blue and gold in your new logo */
-            --primary: #123356;
-            --secondary: #1a2a3a;
-            --accent: #c0944b;
-            --text-light: #ccd6f6;
-            --text-dark: #1a1a1b;
-            --white: #ffffff;
-            --gray: #f8f9fa;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--white);
-            color: var(--text-dark);
-            line-height: 1.7;
-            scroll-behavior: smooth;
-        }
-
-        /* Language: hide opposite locale only (no forced display:block on .ar — keeps links/spans inline) */
-        html:not([dir="rtl"]) .ar {
-            display: none !important;
-        }
-
-        html[dir="rtl"] .en {
-            display: none !important;
-        }
-
-        html[dir="rtl"] .ar {
-            font-family: 'Amiri', serif;
-            font-size: 1.15rem;
-        }
-
-        /* Navigation */
-        nav {
-            background: rgba(18, 51, 86, 0.98);
-            padding: 0.8rem 8%;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 2000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid var(--accent);
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo-img {
-            height: 50px;
-            width: auto;
-        }
-
-        .logo-text {
-            color: var(--white);
-            font-weight: 700;
-            letter-spacing: 1px;
-            font-size: 1.1rem;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--white);
-            text-decoration: none;
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        .lang-switch {
-            background: var(--accent);
-            color: var(--white);
-            border: none;
-            padding: 8px 18px;
-            font-weight: 700;
-            cursor: pointer;
-            border-radius: 2px;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(18, 51, 86, 0.8), rgba(18, 51, 86, 0.8)),
-                url('bg_main.jpeg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            padding: 0 10%;
-            color: var(--white);
-        }
-
-        .hero-content {
-            max-width: 900px;
-        }
-
-        .hero-content h1 {
-            font-size: 3.5rem;
-            line-height: 1.2;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .hero-content p {
-            font-size: 1.4rem;
-            color: var(--accent);
-            margin-bottom: 30px;
-        }
-
-        /* General Section Styling */
-        section {
-            padding: 100px 10%;
-        }
-
-        .bg-dark {
-            background: var(--primary);
-            color: var(--white);
-        }
-
-        .section-tag {
-            color: var(--accent);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            border-left: 5px solid var(--accent);
-            padding-left: 20px;
-        }
-
-        [dir="rtl"] .section-title {
-            border-left: none;
-            border-right: 5px solid var(--accent);
-            padding-left: 0;
-            padding-right: 20px;
-        }
-
-        /* About Grid */
-        .origin-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .about-vision-panel {
-            padding: 50px;
-            color: var(--white);
-            border-radius: 4px;
-            background:
-                linear-gradient(rgba(18, 51, 86, 0.82), rgba(18, 51, 86, 0.82)),
-                url('bg_second.jpeg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .stat-item {
-            border-left: 3px solid var(--accent);
-            padding-left: 20px;
-        }
-
-        .stat-item h4 {
-            font-size: 2.2rem;
-            color: var(--primary);
-        }
-
-        /* Services Grid */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-        }
-
-        .service-card {
-            background: #fdfdfd;
-            padding: 30px;
-            border: 1px solid #eee;
-            transition: 0.3s;
-            border-top: 3px solid var(--primary);
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border-top-color: var(--accent);
-        }
-
-        .service-card i {
-            color: var(--accent);
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .service-card h3 {
-            margin-bottom: 15px;
-            color: var(--primary);
-        }
-
-        .service-card p {
-            color: var(--text-dark);
-        }
-
-        /* Leadership Cards */
-        .founder-strip {
-            display: flex;
-            background: var(--gray);
-            margin-bottom: 30px;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .founder-info {
-            padding: 40px;
-            flex: 1;
-        }
-
-        .founder-info .role {
-            color: var(--accent);
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-        }
-
-        .founder-info .linkedin-link {
-            color: var(--accent);
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.35em;
-            margin-top: 12px;
-        }
-
-        .founder-info .linkedin-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Contact */
-        .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-        }
-
-        .contact-detail-link {
-            color: var(--white);
-            font-weight: 600;
-            text-decoration: underline;
-            text-decoration-color: rgba(192, 148, 75, 0.55);
-            text-underline-offset: 4px;
-        }
-
-        .contact-detail-link:hover {
-            color: var(--accent);
-            text-decoration-color: var(--accent);
-        }
-
-        .contact-trust-strip {
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-            line-height: 1.55;
-            color: var(--text-light);
-        }
-
-        .contact-trust-strip a.contact-detail-link {
-            font-weight: 600;
-        }
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        .submit-btn {
-            background: var(--accent);
-            color: white;
-            padding: 15px 40px;
-            border: none;
-            font-weight: 700;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .submit-btn:hover {
-            background: var(--primary);
-        }
-
-        footer {
-            background: #0a192f;
-            color: #8892b0;
-            padding: 40px 10%;
-            text-align: center;
-        }
-
-        @media (max-width: 992px) {
-            .hero-content h1 {
-                font-size: 2.2rem;
-            }
-
-            .origin-grid,
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
 
     <nav>
         <div class="logo-container">
-            <img src="logo.png" alt="NASC Logo" class="logo-img">
+            <img src="logo.png" alt="NASC Logo" class="logo-img" width="200" height="200" decoding="async">
             <div class="logo-text">
                 <span class="en">NASC for Power Solutions</span>
                 <span class="ar">NASC لخدمات الطاقة</span>
@@ -429,15 +105,15 @@
                 </div>
             </div>
             <div class="about-vision-panel">
-                <h3 style="color: var(--accent); margin-bottom: 20px;" class="en">Our Vision 2030</h3>
-                <h3 style="color: var(--accent); margin-bottom: 20px;" class="ar">رؤية 2030</h3>
+                <h3 class="en vision-heading">Our Vision 2030</h3>
+                <h3 class="ar vision-heading">رؤية 2030</h3>
                 <p class="en">To be the foundational partner in the revitalization of the Syrian energy sector, setting
                     the national benchmark for technical excellence and sustainable resource management.</p>
                 <p class="ar">أن نكون الشريك التأسيسي في تنشيط قطاع الطاقة السوري، ووضع المعيار الوطني للتميز الفني
                     والإدارة المستدامة للموارد.</p>
                 <br>
-                <h3 style="color: var(--accent); margin-bottom: 20px;" class="en">Our Mission</h3>
-                <h3 style="color: var(--accent); margin-bottom: 20px;" class="ar">مهمتنا</h3>
+                <h3 class="en vision-heading">Our Mission</h3>
+                <h3 class="ar vision-heading">مهمتنا</h3>
                 <p class="en">Empowering operators through the strategic integration of decades of field expertise with
                     modern technical solutions.</p>
                 <p class="ar">تمكين المشغلين من خلال التكامل الاستراتيجي بين عقود من الخبرة الميدانية والحلول التقنية
@@ -450,8 +126,8 @@
     <section class="bg-dark" id="services">
         <span class="section-tag en">Field Capabilities</span>
         <span class="section-tag ar">القدرات الميدانية</span>
-        <h2 class="section-title en" style="color: white;">Integrated Field Solutions</h2>
-        <h2 class="section-title ar" style="color: white;">حلول ميدانية متكاملة</h2>
+        <h2 class="section-title section-title--light en">Integrated Field Solutions</h2>
+        <h2 class="section-title section-title--light ar">حلول ميدانية متكاملة</h2>
 
         <div class="services-grid">
             <div class="service-card">
@@ -537,8 +213,8 @@
     <section id="contact" class="bg-dark">
         <div class="contact-container">
             <div>
-                <h2 class="section-title en" style="color: white; border-color: var(--accent);">Get in Touch</h2>
-                <h2 class="section-title ar" style="color: white; border-color: var(--accent);">اتصل بنا</h2>
+                <h2 class="section-title section-title--light en">Get in Touch</h2>
+                <h2 class="section-title section-title--light ar">اتصل بنا</h2>
                 <p class="en">Ready to support your next project in the MENA energy landscape.</p>
                 <p class="ar">مستعدون لدعم مشروعكم القادم في قطاع الطاقة في منطقة الشرق الأوسط.</p>
                 <p class="en contact-trust-strip">Prefer direct channels—fastest acknowledgment by email or phone.</p>
@@ -582,39 +258,38 @@
     </section>
 
     <footer>
-        <p class="en">&copy; 2024 NASC for Power Solutions. All rights reserved. Damascus, Syria.</p>
-        <p class="ar">© 2024 NASC لخدمات الطاقة. جميع الحقوق محفوظة. دمشق، سوريا.</p>
+        <p class="en">&copy; 2026 NASC for Power Solutions. All rights reserved. Damascus, Syria.</p>
+        <p class="ar">© 2026 NASC لخدمات الطاقة. جميع الحقوق محفوظة. دمشق، سوريا.</p>
     </footer>
-
-    <script>
-        function applyFormPlaceholders(isRtl) {
-            document.querySelectorAll('#contact-form [data-ph-en]').forEach(function (el) {
-                var ar = el.getAttribute('data-ph-ar');
-                var en = el.getAttribute('data-ph-en');
-                el.placeholder = isRtl ? ar : en;
-            });
-        }
-
-        function toggleLang() {
-            var html = document.getElementById('main-html');
-            var btn = document.querySelector('.lang-switch');
-            var rtl = html.getAttribute('dir') === 'rtl';
-
-            if (rtl) {
-                html.setAttribute('dir', 'ltr');
-                html.setAttribute('lang', 'en');
-                btn.innerText = 'العربية';
-                applyFormPlaceholders(false);
-            } else {
-                html.setAttribute('dir', 'rtl');
-                html.setAttribute('lang', 'ar');
-                btn.innerText = 'English';
-                applyFormPlaceholders(true);
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "NASC for Power Solutions",
+            "description": "Operator-focused oil and gas field services in Syria, including pipeline construction, surface facilities, water injection, sludge treatment, and HSEQ-led execution.",
+            "logo": "logo.png",
+            "areaServed": "SY",
+            "sameAs": [
+                "https://www.linkedin.com/in/eng-maher-alwan-b438b111/?skipRedirect=true"
+            ],
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "email": "Maher@nas-c.com",
+                "telephone": "+963991997650",
+                "contactType": "customer service",
+                "availableLanguage": [
+                    "English",
+                    "Arabic"
+                ]
+            }],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Damascus",
+                "addressCountry": "SY"
             }
         }
-
-        applyFormPlaceholders(false);
     </script>
+    <script src="main.js"></script>
 
 </body>
 
