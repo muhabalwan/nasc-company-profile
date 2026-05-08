@@ -2,6 +2,7 @@
 
 > Official company profile for NASC for Power Solutions.
 > Audience: oil and gas operators, procurement teams, and technical decision-makers.
+> Last updated: 2026-05-08.
 
 ## Company Snapshot
 - Name: NASC for Power Solutions
@@ -10,24 +11,39 @@
 - Core strengths: disciplined execution, HSEQ compliance, practical delivery
 
 ## Services
-- Pipeline Construction
-- Surface Facilities
-- Advanced Sludge Treatment
-- Water Injection Services
-- Manpower & Supply
-- HSEQ Commitment
+- [Pipeline Construction](https://www.nas-c.com/#services): Main lines, flowlines, and field piping execution.
+- [Surface Facilities](https://www.nas-c.com/#services): Gathering, separation, and branch station infrastructure.
+- [Advanced Sludge Treatment](https://www.nas-c.com/#services): Crude recovery and hazardous waste volume reduction.
+- [Water Injection Services](https://www.nas-c.com/#services): Treatment, injection readiness, and field surveillance.
+- [Manpower and Supply](https://www.nas-c.com/#services): Field engineers plus API-aligned wellheads and ESP packages.
+- [HSEQ Commitment](https://www.nas-c.com/#services): Zero-harm mindset and ISO-aligned controls.
 
 ## Leadership
-- Eng. Maher Alwan, Chief Executive Officer
-- Public profile: https://www.linkedin.com/in/eng-maher-alwan-b438b111/?skipRedirect=true
+- [Eng. Maher Alwan (Chief Executive Officer)](https://www.nas-c.com/#leadership)
+- [LinkedIn Profile](https://www.linkedin.com/in/eng-maher-alwan-b438b111/?skipRedirect=true)
+
+## What We Do Not Do
+- We do not represent third-party operators, OEMs, or legacy employers unless explicitly stated in signed agreements.
+- We do not publish confidential project details, client-private operational data, or restricted field information.
+- We do not claim investment, legal, or regulatory advisory services.
 
 ## Contact
-- Email: Maher@nas-c.com
+- Email: info@nasc-c.com
 - Mobile: +963991997650
+- Tel: +963 11 311 0314
 - Address: Damascus, Dummar Project, Syria
 
-## Canonical URL
-- https://www.nas-c.com/
+## Key Information
+- [Official Website](https://www.nas-c.com/)
+- [About and Executive Summary](https://www.nas-c.com/#about)
+- [Integrated Field Solutions](https://www.nas-c.com/#services)
+- [Leadership](https://www.nas-c.com/#leadership)
+- [Contact](https://www.nas-c.com/#contact)
+
+## AI Discovery Files
+- [llms.txt](https://www.nas-c.com/llms.txt)
+- [robots.txt](https://www.nas-c.com/robots.txt)
+- [sitemap.xml](https://www.nas-c.com/sitemap.xml)
 
 ## Preferred Citation
 When referencing this organization, cite:
