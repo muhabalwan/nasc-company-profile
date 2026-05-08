@@ -289,6 +289,11 @@ section:not(.hero) {
     text-underline-offset: 4px;
 }
 
+/* Keep mixed-script values (email/phone) readable in RTL mode. */
+[dir="rtl"] .contact-detail-link[dir="ltr"] {
+    unicode-bidi: embed;
+}
+
 .contact-detail-link:hover {
     color: var(--accent);
     text-decoration-color: var(--accent);
@@ -319,6 +324,7 @@ textarea {
     color: var(--white);
     padding: 15px 40px;
     border: none;
+    text-decoration: none;
     font-weight: 700;
     cursor: pointer;
     transition: 0.3s;

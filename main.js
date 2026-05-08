@@ -6,6 +6,38 @@ function applyFormPlaceholders(isRtl) {
     });
 }
 
+function setupMailtoContactForm() {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var nameInput = document.getElementById('contact-name');
+        var emailInput = document.getElementById('contact-email');
+        var msgInput = document.getElementById('contact-msg');
+
+        var name = nameInput ? nameInput.value.trim() : '';
+        var email = emailInput ? emailInput.value.trim() : '';
+        var message = msgInput ? msgInput.value.trim() : '';
+
+        var subject = 'Website Inquiry - NASC';
+        var bodyLines = [
+            'Name/Company: ' + (name || '-'),
+            'Email: ' + (email || '-'),
+            '',
+            'Project requirements:',
+            message || '-'
+        ];
+
+        var mailtoUrl = 'mailto:info@nas-c.com'
+            + '?subject=' + encodeURIComponent(subject)
+            + '&body=' + encodeURIComponent(bodyLines.join('\n'));
+
+        window.location.href = mailtoUrl;
+    });
+}
+
 function toggleLang() {
     var html = document.getElementById('main-html');
     var btn = document.querySelector('.lang-switch');
@@ -25,3 +57,4 @@ function toggleLang() {
 }
 
 applyFormPlaceholders(false);
+setupMailtoContactForm();
